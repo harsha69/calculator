@@ -1,0 +1,113 @@
+<! DOCTYPE HTML>
+    <html>
+    <head>
+    <style>
+             div 
+               {
+                width: 300px;
+                height: 250px;
+                border: 15px solid rgb(218, 189, 147);
+                box-sizing:border-box;
+                word-spacing: 20px;
+                padding:20px;
+                text-align: center;
+                background-color: rgb(131, 131, 209);
+                border-radius: 30px;
+               }
+        </style>
+        <body>
+        <form name="cal">
+        <div>
+        <input  type="text" name="result" size="25" >
+        <br><br> 
+        <input type="button"  value=" 1 "  onclick="myfun1()">
+        <input type="button"  value=" 2 " onclick="myfun2()">
+        <input type="button"  value=" 3 " onclick="myfun3()">
+        <input type="button"  value=" + " onclick="myfunplus()">
+        <br><br>
+        <input type="button"  value=" 4 " onclick="myfun4()">
+        <input type="button"  value=" 5 " onclick="myfun5()">
+        <input type="button"  value=" 6 " onclick="myfun6()">
+        <input type="button"  value=" - " onclick="myfunminus()">
+        <br><br>
+        <input type="button"  value=" 7 " onclick="myfun7()">
+        <input type="button"  value=" 8 " onclick="myfun8()">
+        <input type="button"  value=" 9 " onclick="myfun9()">
+        <input type="button"  value=" * " onclick="myfunmul()">
+        <br><br>
+        <input type="button"  value=" C " onclick="clr()">
+        <input type="button"  value=" / " onclick="myfundiv()">
+        <input type="button"  value=" = " onclick="eq()" style="width:30px">
+        <input type="button"  value=" 0 " onclick="myfun10()">
+     </div>
+    </form>
+     <script>
+         function myfun1( )
+    {
+        (document.cal.result.value += "1");
+    }
+        function myfun2()
+    {
+        (document.cal.result.value += "2");
+    }
+    function myfun3()
+    {
+        (document.cal.result.value += "3");
+    }
+    function myfunplus()
+    {
+        (document.cal.result.value += "+");
+    }
+    function myfun4()
+    {
+        (document.cal.result.value += "4");
+    }
+    function myfun5()
+    {
+        (document.cal.result.value += "5");
+    }
+    function myfun6()
+    {
+        (document.cal.result.value += "6");
+    }
+    function myfunminus()
+    {
+        (document.cal.result.value += "-");
+    }
+    function myfun7()
+    {
+        (document.cal.result.value += "7");
+    }
+    function myfun8()
+    {
+        (document.cal.result.value += "8");
+    }
+    function myfun9()
+    {
+        (document.cal.result.value += "9");
+    }
+    function myfunmul()
+    {
+        (document.cal.result.value += "*");
+    }
+    function clr(){
+        (document.cal.result.value ='');
+    }
+    function myfundiv()
+    {
+        (document.cal.result.value += "/");
+    }
+    function eq()
+    {
+        var equal=eval(document.cal.result.value);
+        (document.cal.result.value=equal);
+    }
+    function myfun10()
+    {
+        (document.cal.result.value += "0");
+    }
+               
+    </script>
+    </body>
+    </head>
+    </html>
